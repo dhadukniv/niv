@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Verify OTP</title>
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+<div class="login-container">
+  <h2>Enter OTP</h2>
+  <p>OTP sent to <span id="mobileDisplay"></span></p>
+  <input type="text" id="otp-input" placeholder="Enter 4-digit OTP" maxlength="4" required />
+  <button onclick="verifyOTP()">Verify</button>
+</div>
+
+<script>
+  document.getElementById("mobileDisplay").textContent = localStorage.getItem("tempMobile") || "your number";
+</script>
+<script src="js/login.js"></script>
+
+</body>
+</html>

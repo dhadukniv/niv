@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile</title>
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+<div class="login-container">
+  <h2>Welcome, <span id="userName"></span>!</h2>
+  <p>Email: <span id="userEmail"></span></p>
+  <p>Mobile: <span id="userMobile"></span></p>
+  
+  <button onclick="goHome()">Save & Go to Home</button>
+  <button onclick="logout()">Logout</button>
+</div>
+
+<script>
+  const name = localStorage.getItem("userName");
+  const email = localStorage.getItem("userEmail");
+  const mobile = localStorage.getItem("userMobile");
+
+  if (!name || !email || !mobile) {
+    window.location.href = "login.html"; // redirect to login if not logged in
+  } else {
+    document.getElementById("userName").textContent = name;
+    document.getElementById("userEmail").textContent = email;
+    document.getElementById("userMobile").textContent = mobile;
+  }
+
+  function goHome() {
+    localStorage.setItem("loggedIn", "true"); // mark user as logged in after Save
+    window.location.href = "index.html"; // go to home page
+  }
+
+  function logout() {
+    localStorage.clear();
+    window.location.href = "login.html";
+  }
+</script>
+
+</body>
+</html>

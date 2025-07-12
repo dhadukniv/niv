@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+<div class="login-container">
+  <h2>Login</h2>
+
+  <!-- POST to profile.php -->
+  <form method="POST" action="profile.php">
+    <input type="text" name="name" placeholder="Enter Full Name" required />
+    <input type="email" name="email" placeholder="Enter Email" required />
+    <input type="tel" name="mobile" placeholder="Enter Mobile Number" required />
+    <button type="submit" name="send_otp">Continue</button>
+  </form>
+</div>
+
+</body>
+</html>

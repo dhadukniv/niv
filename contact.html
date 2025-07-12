@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Ethnicalnaree</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff;
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
+
+    .contact-container {
+      max-width: 700px;
+      margin: 80px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #555;
+      margin-bottom: 40px;
+      font-size: 1.1rem;
+    }
+
+    .contact-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #fff;
+      border: 2px solid #1c3faa;
+      border-radius: 20px;
+      padding: 15px 20px;
+      margin-bottom: 20px;
+      text-decoration: none;
+      color: #1c3faa;
+      transition: all 0.3s ease;
+    }
+
+    .contact-card:hover {
+      background-color: #f5f7ff;
+    }
+
+    .contact-left {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .icon-circle {
+      background-color: #f0f3ff;
+      border-radius: 50%;
+      padding: 10px;
+      font-size: 1.2rem;
+    }
+
+    .contact-info {
+      text-align: left;
+    }
+
+    .contact-title {
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    .contact-time {
+      font-size: 0.9rem;
+      color: #444;
+    }
+
+    .arrow-icon {
+      font-size: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      .contact-card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+      }
+
+      .contact-left {
+        margin-bottom: 10px;
+      }
+
+      .arrow-icon {
+        align-self: flex-end;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contact-container">
+    <h1>Contact Us</h1>
+    <p class="subtitle">Questions or concerns? We're just a message away</p>
+
+    <!-- Call Option -->
+    <a href="tel:+919876543210" class="contact-card">
+      <div class="contact-left">
+        <div class="icon-circle"><i class="fas fa-phone"></i></div>
+        <div class="contact-info">
+          <div class="contact-title">Call</div>
+          <div class="contact-time">10:30 AM – 6:30 PM | Monday to Saturday</div>
+        </div>
+      </div>
+      <div class="arrow-icon"><i class="fas fa-arrow-right"></i></div>
+    </a>
+
+    <!-- WhatsApp Option -->
+    <a href="https://wa.me/919876543210" target="_blank" class="contact-card">
+      <div class="contact-left">
+        <div class="icon-circle"><i class="fab fa-whatsapp"></i></div>
+        <div class="contact-info">
+          <div class="contact-title">WhatsApp Us</div>
+          <div class="contact-time">10:30 AM – 6:30 PM | Monday to Saturday</div>
+        </div>
+      </div>
+      <div class="arrow-icon"><i class="fas fa-arrow-right"></i></div>
+    </a>
+  </div>
+
+</body>
+</html>

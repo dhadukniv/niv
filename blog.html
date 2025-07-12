@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saree Blog</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #000000;
+      color: #333;
+    }
+
+    header {
+      background-color: #ffffff;
+      color: #ffffff;
+      padding: 1rem 2rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      color: #030303;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .blog-hero {
+      width: 100%;
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    .blog-section {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .blog-card {
+      background: #fff;
+      border: 1px solid #e5e5e5;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .blog-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .blog-card-content {
+      padding: 1rem;
+    }
+
+    .blog-card h3 {
+      font-size: 1.2rem;
+      margin: 0 0 0.5rem 0;
+    }
+
+    .blog-card p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: #555;
+    }
+
+    .blog-card a {
+      display: inline-block;
+      margin-top: 1rem;
+      color: #00155a;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .blog-card a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="collection.html">Collection</a>
+    <a href="blog.html">Blog</a>
+    <a href="cart.html">Cart</a>
+  </nav>
+</header>
+
+<div class="blog-hero">
+  Saree Style Stories
+</div>
+
+<section class="blog-section">
+
+  <div class="blog-card">
+    <img src="images/blog1.png" alt="Blog Image">
+    <div class="blog-card-content">
+      <h3>Top 5 Saree Trends in 2025</h3>
+      <p>Explore the most loved fabrics, patterns, and color trends for sarees this year – from modern minimalism to traditional grandeur.</p>
+      <a href="#">Read More →</a>
+    </div>
+  </div>
+
+  <div class="blog-card">
+    <img src="images/blog2.png" alt="Blog Image">
+    <div class="blog-card-content">
+      <h3>How to Choose the Perfect Saree for Any Occasion</h3>
+      <p>Confused between Banarasi, Silk, or Kanjivaram? Here's a simple guide to help you pick the right one for weddings, parties, and more.</p>
+      <a href="#">Read More →</a>
+    </div>
+  </div>
+
+  <div class="blog-card">
+    <img src="images/blog3.png" alt="Blog Image">
+    <div class="blog-card-content">
+      <h3>Saree Draping Styles You Should Try</h3>
+      <p>From Bengali to Gujarati, learn 6 beautiful draping styles that can completely transform your saree look.</p>
+      <a href="#">Read More →</a>
+    </div>
+  </div>
+
+  <div class="blog-card">
+    <img src="images/blog4.png" alt="Blog Image">
+    <div class="blog-card-content">
+      <h3>Caring for Your Sarees: Tips & Tricks</h3>
+      <p>Maintain the richness of your silk, cotton, or chiffon sarees with these essential storage and washing techniques.</p>
+      <a href="#">Read More →</a>
+    </div>
+  </div>
+
+</section>
+
+</body>
+</html>
